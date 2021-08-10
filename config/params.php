@@ -40,6 +40,11 @@ return [
         ],
     ],
 
+    //'yiisoft/yii-debug' => [
+        // enabled/disabled debugger
+        //'enabled' => true
+    //],
+
     'yiisoft/yii-console' => [
         'commands' => [
             'hello' => Hello::class,

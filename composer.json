@@ -13,7 +13,7 @@
         "test": "phpunit --testdox --no-interaction",
         "test-watch": "phpunit-watcher watch",
         "post-update-cmd": [
-            "App\\Installer::postUpdate"
+            "App\\Installer::postRunFinish"
         ]
     },
     "require": {
@@ -34,6 +34,7 @@
         "yiisoft/error-handler": "^1.0",
         "yiisoft/factory": "3.0.x-dev",
         "yiisoft/files": "^1.0",
+        "yiisoft/form": "1.0.x-dev",
         "yiisoft/html": "^1.2",
         "yiisoft/http": "^1.1",
         "yiisoft/i18n": "^1.0.0",
