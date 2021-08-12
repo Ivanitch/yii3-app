@@ -5,13 +5,16 @@ use Yiisoft\Form\Widget\Form;
 use Yiisoft\Html\Html;
 
 /* @var \App\Form\HelloForm $form */
+/* @var string $say */
 /* @var string $csrf */
 /* @var \Yiisoft\Router\UrlGeneratorInterface $url */
 
 ?>
 
-
 <?php if (!empty($form->getMessage())): ?>
+    <div class="notification is-warning">
+        The Say is: <?= Html::encode($say) ?>
+    </div>
     <div class="notification is-success">
         The message is: <?= Html::encode($form->getMessage()) ?>
     </div>
